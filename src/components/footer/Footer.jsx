@@ -1,22 +1,28 @@
 // import React from 'react'
 // import { Link } from "react-router-dom";
+import PhoneIcon from '@mui/icons-material/Phone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
+import EmailIcon from '@mui/icons-material/Email';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const Footer = () => {
   const services = [
     {
       id: 1,
-      name: "Electrical Engineering",
-      image: "electrical.jpg",
+      name: 'Electrical Engineering',
+      image: 'electrical.jpg',
     },
     {
       id: 2,
-      name: "Mechanical Engineering",
-      image: "mechanical.jpg",
+      name: 'Mechanical Engineering',
+      image: 'mechanical.jpg',
     },
     {
       id: 3,
-      name: "Civil Engineering",
-      image: "civil.jpg",
+      name: 'Civil Engineering',
+      image: 'civil.jpg',
     },
   ];
 
@@ -27,31 +33,31 @@ const Footer = () => {
           <div className="col-md-6 col-lg-3">
             <div className="footer-contact">
               <h2>Office Contact</h2>
-              <p className="text-uppercase">
-                <i className="fa fa-map-marker-alt" />
+              <p className="text-uppercase" style={{ fontSize: '15px' }}>
+                <LocationOnIcon sx={{ fontSize: '20px' }} />
                 Blue Heights, Level 3 Nkrumah Rd
               </p>
               <p className="text-uppercase">
                 <a href="tel:+256 776024658">
-                  <i className="fa fa-phone-alt" />
+                  <PhoneIcon />
                   +256 776024658
                 </a>
               </p>
               <p className="text-uppercase">
                 <a href="tel:+256774764199">
-                  <i className="fa fa-phone-alt" />
+                  <PhoneIcon />
                   +256774764199
                 </a>
               </p>
               <p className="text-uppercase">
                 <a href="tel:+256708881648">
-                  <i className="fa fa-phone-alt" />
+                  <PhoneIcon />
                   +256708881648
                 </a>
               </p>
               <p className="">
                 <a href="mailto:cubeengineeringlimited@gmail.com">
-                  <i className="fa fa-envelope" />
+                  <EmailIcon />
                   cubeengineeringlimited@gmail.com
                 </a>
               </p>
@@ -61,70 +67,91 @@ const Footer = () => {
                   href="https://twitter.com/CubeEngineers?s=20&t=YOPh578w5sA3VX3KHRhieg"
                   rel="noreferrer"
                 >
-                  <i className="fab fa-twitter" />
+                  <TwitterIcon
+                    sx={{
+                      color: '#fff',
+                    }}
+                  />
                 </a>
                 <a href="https://www.linkedin.com/company/cube-engineering-and-general-supplies-limited/">
-                  <i className="fab fa-linkedin-in" />
+                  <LinkedInIcon
+                    sx={{
+                      color: '#fff',
+                    }}
+                  />
                 </a>
                 <a target="_blank" href="https://mail.google.com" rel="noreferrer">
-                  <i className="fa fa-envelope" />
+                  <EmailIcon
+                    sx={{
+                      color: '#fff',
+                    }}
+                  />
                 </a>
               </div>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
             <div className="footer-link">
-              <h2>Services Areas</h2>
-              {services.map((service) => (
-                <a href="{{ route('services.show', $service->id) }}" className="text-uppercase">
-                  {service.name}
-                </a>
-              ))}
+              <h2>Useful Pages</h2>
+              <a className="text-uppercase" href="#about">
+                <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
+                About Us
+              </a>
+              <a className="text-uppercase" href="#contact">
+                <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
+                Contact Us
+              </a>
+              <a className="text-uppercase" href="#projects">
+                <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
+                Projects
+              </a>
+              <a className="text-uppercase" href="#testimonials">
+                <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
+                Testimonial
+              </a>
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
             <div className="footer-link">
-              <h2>Useful Pages</h2>
-              <a className="text-uppercase" href="#about">
-                About Us
-              </a>
-              <a className="text-uppercase" href="#contact">
-                Contact Us
-              </a>
-              <a className="text-uppercase" href="#projects">
-                Projects
-              </a>
-              <a className="text-uppercase" href="#testimonials">
-                Testimonial
-              </a>
+              <h2>Services Areas</h2>
+              {services.map((service) => {
+                return (
+                  <a href="{{ route('services.show', $service->id) }}" className="text-uppercase">
+                    <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
+                    {service.name}
+                  </a>
+                );
+              })}
             </div>
           </div>
         </div>
       </div>
       <div className="container footer-menu">
         <div className="f-menu">
-          <a className="text-uppercase" href="{{ route('terms') }}">
+          <a className="text-uppercase" href="$">
             Terms of use
           </a>
-          <a className="text-uppercase" href="{{ route('privacy') }}">
+          <a className="text-uppercase" href="$">
             Privacy policy
           </a>
         </div>
       </div>
       <div className="container copyright">
-        {/* <div className="row">
+        <div className="row">
           <div className="col-md-6">
             <p className="text-uppercase">
-              &copy; <a href="{{ route('home') }}">Cube Engineering @php echo date('Y'); @endphp</a>
-              , All Right Reserved.
+              <span>&copy;</span>
+              <a href="{{ route('home') }}">{` Cube Engineering ${new Date().getFullYear()}`}</a>
+              <span>, All Right Reserved.</span>
             </p>
           </div>
           <div className="col-md-6">
             <p className="text-uppercase">
-              Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+              <span>Designed By </span>
+              <a href="https://htmlcodex.com">HTML Codex</a>
             </p>
           </div>
-        </div> */}
+        </div>
       </div>
     </footer>
   );

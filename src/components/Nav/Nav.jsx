@@ -25,7 +25,7 @@ const Nav = () => {
               <div
                 className="d-flex justify-content-between"
                 style={{
-                  width: "100%",
+                  width: '100%',
                 }}
               >
                 <ul className="navbar-nav" id="navbar-item-tracker">

@@ -1,5 +1,5 @@
 // import React from "react";
-import { Footer, Header, Navbar } from "../components";
+import { Footer, Header, Navbar } from '../components';
 
 const Page = ({ children }) => {
   return (

@@ -1,206 +1,125 @@
 // import React from "react";
-import Page from "../layout/Page";
-import { Carousel, Form } from "../components";
-import Image1 from "../assets/images/vision.jpg";
-import Image2 from "../assets/images/augst 002.jpg";
-import Image3 from "../assets/images/1663739612016 1.jpg";
-import Image4 from "../assets/images/SEPT 02.jpg";
-import Image5 from "../assets/images/Premium Photo Future building construction engineering project_.jpg";
-import Picture1 from "../assets/images/Picture1.png";
-import Picture2 from "../assets/images/Picture2.png";
-import Picture3 from "../assets/images/Picture3.png";
-import Picture4 from "../assets/images/Picture4.png";
-import Picture5 from "../assets/images/Picture5.png";
-import Picture6 from "../assets/images/Picture6.png";
+import TaskAltIcon from '@mui/icons-material/TaskAlt';
+import PhoneIcon from '@mui/icons-material/Phone';
+import { Carousel, Form, TimeLine, FAQs } from '../components';
+import Page from '../layout/Page';
+import Image1 from '../assets/images/vision.jpg';
+import Image2 from '../assets/images/augst 002.jpg';
+import Image3 from '../assets/images/1663739612016 1.jpg';
+import Image4 from '../assets/images/SEPT 02.jpg';
+import Image5 from '../assets/images/Premium Photo Future building construction engineering project_.jpg';
+import Picture1 from '../assets/images/Picture1.png';
+import Picture2 from '../assets/images/Picture2.png';
+import Picture3 from '../assets/images/Picture3.png';
+import Picture4 from '../assets/images/Picture4.png';
+import Picture5 from '../assets/images/Picture5.png';
+import Picture6 from '../assets/images/Picture6.png';
 
 const Home = () => {
   const services = [
     {
       id: 1,
-      name: "Electrical Engineering",
-      image: "electrical.jpg",
+      name: 'Electrical Engineering',
+      image: 'electrical.jpg',
     },
     {
       id: 2,
-      name: "Mechanical Engineering",
-      image: "mechanical.jpg",
+      name: 'Mechanical Engineering',
+      image: 'mechanical.jpg',
     },
     {
       id: 3,
-      name: "Civil Engineering",
-      image: "civil.jpg",
+      name: 'Civil Engineering',
+      image: 'civil.jpg',
     },
   ];
 
   const portfolios = [
     {
       id: 1,
-      name: "Electrical Engineering",
-      image: "electrical.jpg",
-      about: "We offer a wide range of electrical engineering services",
+      name: 'Electrical Engineering',
+      image: 'electrical.jpg',
+      about: 'We offer a wide range of electrical engineering services',
     },
     {
       id: 2,
-      name: "Mechanical Engineering",
-      image: "mechanical.jpg",
-      about: "We offer a wide range of mechanical engineering services",
+      name: 'Mechanical Engineering',
+      image: 'mechanical.jpg',
+      about: 'We offer a wide range of mechanical engineering services',
     },
     {
       id: 3,
-      name: "Civil Engineering",
-      image: "civil.jpg",
-      about: "We offer a wide range of civil engineering services",
+      name: 'Civil Engineering',
+      image: 'civil.jpg',
+      about: 'We offer a wide range of civil engineering services',
     },
     {
       id: 4,
-      name: "Electrical Engineering",
-      image: "electrical.jpg",
-      about: "We offer a wide range of electrical engineering services",
+      name: 'Electrical Engineering',
+      image: 'electrical.jpg',
+      about: 'We offer a wide range of electrical engineering services',
     },
     {
       id: 5,
-      name: "Mechanical Engineering",
-      image: "mechanical.jpg",
-      about: "We offer a wide range of mechanical engineering services",
+      name: 'Mechanical Engineering',
+      image: 'mechanical.jpg',
+      about: 'We offer a wide range of mechanical engineering services',
     },
     {
       id: 6,
-      name: "Civil Engineering",
-      image: "civil.jpg",
-      about: "We offer a wide range of civil engineering services",
-    },
-  ];
-
-  const FAQs = [
-    {
-      id: 1,
-      question: "What is the company’s vision?",
-      answer:
-        "To be the leading Services Provider in the engineering sector with high focus on Customer Satisfaction",
-    },
-    {
-      id: 2,
-      question: "What is the company's mission?",
-      answer: "To provide high-quality engineering services that meet our customers' needs",
-    },
-    {
-      id: 3,
-      question: "What services does the company offer?",
-      answer:
-        "The company offers a wide range of engineering services, including design, construction, and maintenance",
-    },
-    {
-      id: 4,
-      question: "Who are the company's clients?",
-      answer:
-        "Our clients include both private and public sector organizations in various industries",
-    },
-    {
-      id: 5,
-      question: "Where is the company located?",
-      answer:
-        "The company is headquartered in City, Country, with offices in several other locations",
-    },
-    {
-      id: 6,
-      question: "How long has the company been in business?",
-      answer: "The company has been providing engineering services for over X years",
-    },
-    {
-      id: 7,
-      question: "What sets the company apart from its competitors?",
-      answer:
-        "Our commitment to customer satisfaction and our expertise in the engineering sector set us apart from our competitors",
-    },
-    {
-      id: 8,
-      question: "Does the company have any certifications or accreditations?",
-      answer:
-        "Yes, the company is certified by [Certification Body] and is a member of [Professional Association]",
-    },
-    {
-      id: 9,
-      question: "What is the company's approach to sustainability?",
-      answer:
-        "The company is committed to sustainable practices in all aspects of our work, from design to construction to maintenance",
-    },
-    {
-      id: 10,
-      question: "How can I get in touch with the company?",
-      answer: "You can contact us via email at info@company.com or call us at (123)456-7890",
+      name: 'Civil Engineering',
+      image: 'civil.jpg',
+      about: 'We offer a wide range of civil engineering services',
     },
   ];
 
   const testimonials = [
     {
       id: 1,
-      customername: "John Doe",
-      occupation: "Engineer",
+      customername: 'John Doe',
+      occupation: 'Engineer',
       comments:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      image: "testimonial-1.jpg",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
+      image: 'testimonial-1.jpg',
     },
     {
       id: 2,
-      customername: "John Doe",
-      occupation: "Engineer",
+      customername: 'John Doe',
+      occupation: 'Engineer',
       comments:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      image: "testimonial-1.jpg",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
+      image: 'testimonial-1.jpg',
     },
     {
       id: 3,
-      customername: "John Doe",
-      occupation: "Engineer",
+      customername: 'John Doe',
+      occupation: 'Engineer',
       comments:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      image: "testimonial-1.jpg",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
+      image: 'testimonial-1.jpg',
     },
     {
       id: 4,
-      customername: "John Doe",
-      occupation: "Engineer",
+      customername: 'John Doe',
+      occupation: 'Engineer',
       comments:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      image: "testimonial-1.jpg",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
+      image: 'testimonial-1.jpg',
     },
     {
       id: 5,
-      customername: "John Doe",
-      occupation: "Engineer",
+      customername: 'John Doe',
+      occupation: 'Engineer',
       comments:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      image: "testimonial-1.jpg",
-    },
-  ];
-
-  const timelines = [
-    {
-      id: 1,
-      title: "2018",
-      image: "timeline-1.jpg",
-    },
-    {
-      id: 2,
-      title: "2019",
-      image: "timeline-2.jpg",
-    },
-    {
-      id: 3,
-      title: "2020",
-      image: "timeline-3.jpg",
-    },
-    {
-      id: 4,
-      title: "2021",
-      image: "timeline-4.jpg",
+        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
+      image: 'testimonial-1.jpg',
     },
   ];
 
   return (
     <Page>
       <Carousel />
-      <section className="feature wow fadeInUp" data-wow-delay="0.1s">
+      <div className="feature wow fadeInUp" data-wow-delay="0.1s">
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-lg-4 col-md-12">
@@ -210,6 +129,7 @@ const Home = () => {
                 </div>
                 <div className="feature-text">
                   <h3>Expert Worker</h3>
+                  <TaskAltIcon sx={{ color: '#ff9c36', fontSize: 45 }} />
                 </div>
               </div>
             </div>
@@ -220,6 +140,7 @@ const Home = () => {
                 </div>
                 <div className="feature-text">
                   <h3>Quality Work</h3>
+                  <TaskAltIcon sx={{ color: '#ff9c36', fontSize: 45 }} />
                 </div>
               </div>
             </div>
@@ -230,12 +151,14 @@ const Home = () => {
                 </div>
                 <div className="feature-text">
                   <h3>24/7 Support</h3>
+                  <TaskAltIcon sx={{ color: '#ff9c36', fontSize: 45 }} />
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
       <section id="about">
         <div className="about-container-wrapper">
           <div id="about" className="about wow fadeInUp" data-wow-delay="0.1s">
@@ -445,17 +368,19 @@ const Home = () => {
             <h2>Services We Provide</h2>
           </div>
           <div className="row d-flex gap-4 justify-content-around flex-wrap">
-            {services.map((service) => (
-              <div className="service-card" key={service.id}>
-                <img src={service.image} alt={service.name} />
-                <div className="service-card-content">
-                  <h2 className="service-card-title text-capitalize">{service.name}</h2>
-                  <a href="$" className="serivce-button">
-                    Learn More
-                  </a>
+            {services.map((service) => {
+              return (
+                <div className="service-card" key={service.id}>
+                  <img src={service.image} alt={service.name} />
+                  <div className="service-card-content">
+                    <h2 className="service-card-title text-capitalize">{service.name}</h2>
+                    <a href="$" className="serivce-button">
+                      Learn More
+                    </a>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -467,95 +392,42 @@ const Home = () => {
         <div className="containerFluid bgPortfolio py5">
           <div className="container py5">
             <div className="row m0 portfolioContainer">
-              {portfolios.map(({ image, name, about }) => (
-                <div className="colLg4 colMd6 colSm12 p0 portfolioItem">
-                  <div className="positionRelative overflowHidden">
-                    <div className="portfolioImg">
-                      <img className="imgFluid w100" src={image} alt={name} />
-                    </div>
-                    <div className="portfolioText">
-                      <h4 className="fontWeightBold mb4">{name}</h4>
-                      <div className="dFlex flexColumn alignItemsCenter justifyContentCenter">
-                        <p className="textCenter">{about}</p>
-                        <a className="btn btnSm btnSecondary m1" href="$" data-lightbox="portfolio">
-                          <i className="fa faEye" />
-                        </a>
+              {portfolios.map(({ image, name, about }) => {
+                return (
+                  <div className="colLg4 colMd6 colSm12 p0 portfolioItem">
+                    <div className="positionRelative overflowHidden">
+                      <div className="portfolioImg">
+                        <img className="imgFluid w100" src={image} alt={name} />
+                      </div>
+                      <div className="portfolioText">
+                        <h4 className="fontWeightBold mb4">{name}</h4>
+                        <div className="dFlex flexColumn alignItemsCenter justifyContentCenter">
+                          <p className="textCenter">{about}</p>
+                          <a
+                            className="btn btnSm btnSecondary m1"
+                            href="$"
+                            data-lightbox="portfolio"
+                          >
+                            <i className="fa faEye" />
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
         </div>
       </section>
-      <section id="FAQs">
-        <div className="faqs">
-          <div className="container">
-            <div className="section-header text-center">
-              <p>Frequently Asked Question</p>
-              <h2>You May Ask</h2>
-            </div>
-            <div className="row">
-              <div className="col-md-6">
-                <div id="accordion-1">
-                  {FAQs.slice(0, 5).map((FAQ) => (
-                    <div className="card wow fadeInLeft" data-wow-delay="0.1s">
-                      <div className="card-header">
-                        <a
-                          className="card-link collapsed"
-                          data-toggle="collapse"
-                          href="#collapse{{ $FAQ->id }}"
-                        >
-                          {FAQ.question}
-                        </a>
-                      </div>
-                      <div
-                        id="collapse{{ $FAQ->id }}"
-                        className="collapse"
-                        data-parent="#accordion-1"
-                      >
-                        <div className="card-body">{FAQ.answer}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div id="accordion-2">
-                  {FAQs.slice(5, 10).map((FAQ) => (
-                    <div className="card wow fadeInRight" data-wow-delay="0.{{ $FAQ->id }}s">
-                      <div className="card-header">
-                        <a
-                          className="card-link collapsed"
-                          data-toggle="collapse"
-                          href="#collapse{{ $FAQ->id }}"
-                        >
-                          {FAQ.question}
-                        </a>
-                      </div>
-                      <div
-                        id="collapse{{ $FAQ->id }}"
-                        className="collapse"
-                        data-parent="#accordion-2"
-                      >
-                        <div className="card-body">{FAQ.answer}</div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <FAQs />
       <section id="testimonials">
         <div className="testimonial wow fadeIn" data-wow-delay="0.1s">
           <div className="section-header text-center">
             <p>Testimonials</p>
             <h2
               style={{
-                color: "#fff",
+                color: '#fff',
               }}
             >
               From Our Customers
@@ -565,24 +437,28 @@ const Home = () => {
             <div className="row">
               <div className="col-12">
                 <div className="testimonial-slider-nav">
-                  {testimonials.map((testimonial) => (
-                    <div className="slider-nav">
-                      <img src={testimonial.image} alt="Testimonial" />
-                    </div>
-                  ))}
+                  {testimonials.map((testimonial) => {
+                    return (
+                      <div className="slider-nav">
+                        <img src={testimonial.image} alt="Testimonial" />
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
             <div className="row">
               <div className="col-12">
                 <div className="testimonial-slider">
-                  {testimonials.map((testimonial) => (
-                    <div className="slider-item">
-                      <h3>{testimonial.customername}</h3>
-                      <h4>{testimonial.occupation}</h4>
-                      <p>{testimonial.comments}</p>
-                    </div>
-                  ))}
+                  {testimonials.map((testimonial) => {
+                    return (
+                      <div className="slider-item">
+                        <h3>{testimonial.customername}</h3>
+                        <h4>{testimonial.occupation}</h4>
+                        <p>{testimonial.comments}</p>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
             </div>
@@ -664,63 +540,14 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="timeline">
-        <div className="container-fluid py-5 wow fadeIn">
-          <div className="container py-5">
-            <div className="row align-items-end mb-4 timeline-head">
-              <div className="col-lg-6">
-                <h6 className="text-secondary font-weight-semi-bold text-uppercase mb-3">
-                  Daily Reminders
-                </h6>
-                <h1 className="section-title mb-3">Always Deliver more than expected.</h1>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12">
-                <div className="owl-carousel timeline-carousel position-relative">
-                  {timelines.map((timeline) => (
-                    <div className="timeline d-flex flex-column text-center rounded overflow-hidden">
-                      <div className="position-relative">
-                        <div className="timeline-img">
-                          <img className="img-fluid w-100" src={timeline.image} alt="" />
-                        </div>
-                        <div className="timeline-social d-flex flex-column align-items-center justify-content-center">
-                          <a
-                            target="_blank"
-                            className="btn btn-secondary btn-social mb-2"
-                            href="https://twitter.com/CubeEngineers?s=20&t=YOPh578w5sA3VX3KHRhieg"
-                            rel="noreferrer"
-                          >
-                            <i className="fab fa-twitter" />
-                          </a>
-                          <a
-                            target="_blank"
-                            className="btn btn-secondary btn-social mb-2"
-                            href="https://www.linkedin.com/company/cube-engineering-and-general-supplies-limited/"
-                            rel="noreferrer"
-                          >
-                            <i className="fab fa-linkedin-in" />
-                          </a>
-                        </div>
-                      </div>
-                      <div className="d-flex flex-column timeline-text text-center py-4">
-                        <h5 className="font-weight-bold">{timeline.title}</h5>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TimeLine />
       <section>
         <iframe
           title="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7594577220207!2d32.58001141521419!3d0.31122996411729714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbdd0eca93c03%3A0x38c6dc5b1d215262!2sBlue%20Heights!5e0!3m2!1sen!2sug!4v1663617359157!5m2!1sen!2sug"
           width="100%"
           height="600"
-          style={{ border: "0" }}
+          style={{ border: '0' }}
           allowFullScreen=""
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
@@ -730,7 +557,7 @@ const Home = () => {
       <section>
         <span className="floating-call-btn">
           <a href="tel:+256776024658">
-            <i className="fa fa-phone my-float" />
+            <PhoneIcon sx={{ fontSize: '30px', color: '#fff' }} />
           </a>
         </span>
       </section>
