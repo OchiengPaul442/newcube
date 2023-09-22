@@ -1,13 +1,14 @@
 // import React from "react";
-import { Footer, Header } from "../components";
+import { Footer, Header, Navbar } from "../components";
 
 const Page = ({ children }) => {
   return (
-    <>
+    <div className="wrapper">
       <Header />
+      <Navbar />
       {children}
       <Footer />
-    </>
+    </div>
   );
 };
 

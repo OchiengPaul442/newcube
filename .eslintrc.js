@@ -27,6 +27,8 @@ module.exports = {
       { vars: "all", args: "after-used", ignoreRestSiblings: false },
     ],
     quotes: "off",
+    "jsx-a11y/img-redundant-alt": ["off"],
+    "comma-dangle": ["error", "always-multiline"],
     "no-undef": ["error"],
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "no-param-reassign": ["error", { props: false }],

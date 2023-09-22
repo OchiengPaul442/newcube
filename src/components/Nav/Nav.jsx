@@ -1,4 +1,5 @@
 // import React from "react";
+// import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (
@@ -7,11 +8,7 @@ const Nav = () => {
         <nav className="navbar navbar-expand-lg bg-dark navbar-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="{{ route('home') }}">
-              <img
-                src="{{ asset('images/Group 53.png') }}"
-                width="150px"
-                alt=""
-              />
+              <img src="{{ asset('images/Group 53.png') }}" width="150px" alt="" />
             </a>
             <button
               className="navbar-toggler"
@@ -27,7 +24,9 @@ const Nav = () => {
             <div className="collapse navbar-collapse" id="navbarNavDropdown">
               <div
                 className="d-flex justify-content-between"
-                style={{ width: "100%" }}
+                style={{
+                  width: "100%",
+                }}
               >
                 <ul className="navbar-nav" id="navbar-item-tracker">
                   <a href="#home" className="nav-item nav-link">
@@ -45,22 +44,14 @@ const Nav = () => {
                   <a href="#FAQs" className="nav-item nav-link">
                     FAQs
                   </a>
-                  <a
-                    href="#contact"
-                    id="contact-btn-nav-1"
-                    className="nav-item nav-link"
-                  >
+                  <a href="#contact" id="contact-btn-nav-1" className="nav-item nav-link">
                     Contact
                   </a>
                   <a href="#partners" className="nav-item nav-link">
                     Partners
                   </a>
                 </ul>
-                <a
-                  href="#contact"
-                  id="contact-btn-nav-2"
-                  className="nav-item nav-link"
-                >
+                <a href="#contact" id="contact-btn-nav-2" className="nav-item nav-link">
                   <button type="button" className="btn btn-outline-warning">
                     Contact Us
                   </button>
