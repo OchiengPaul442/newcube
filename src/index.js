@@ -1,6 +1,9 @@
+/* eslint-disable import/no-extraneous-dependencies */
+import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import "./assets/styles/main.css";
 import App from "./App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

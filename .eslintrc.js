@@ -20,7 +20,7 @@ module.exports = {
     sourceType: "module",
   },
   rules: {
-    // Commonly used rules
+    "linebreak-style": "off",
     "no-console": ["error", { allow: ["warn", "error"] }],
     "no-unused-vars": [
       "error",
