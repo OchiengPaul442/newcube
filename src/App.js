@@ -5,7 +5,7 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/newcube/" element={<Home />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </Router>
   );
