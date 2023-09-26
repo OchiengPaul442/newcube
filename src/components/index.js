@@ -5,3 +5,8 @@ export { default as FAQs } from './faqs/FAQs';
 export { default as TimeLine } from './timeLines/TimeLine';
 export { default as Form } from './form/Form';
 export { default as Footer } from './footer/Footer';
+export { default as Contact } from './contact/Contact';
+export { default as Portfolio } from './portfolio/Portfolio';
+export { default as Services } from './services/Services';
+export { default as Partners } from './partners/Partners';
+export { default as Testimonials } from './testimonials/Testimonials';

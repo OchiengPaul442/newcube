@@ -1,5 +1,6 @@
 {
-  "name": "newcube",
+  "homepage": "https://OchiengPaul442.github.io/newcube/",
+  "name": "cube_engineering_and_general_supplies_ltd",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,6 +22,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
@@ -46,6 +49,7 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.16.7",
     "eslint-config-airbnb": "^19.0.4",
+    "gh-pages": "^6.0.0",
     "prettier": "3.0.3"
   }
 }

@@ -28,37 +28,38 @@ const FAQs = () => {
   const FAQS = [
     {
       id: 1,
-      question: 'What is the company’s vision?',
+      question: 'What services does your company offer?',
       answer:
-        'To be the leading Services Provider in the engineering sector with high focus on Customer Satisfaction',
+        'Our company offers a wide range of engineering services including general supplies, project management, construction, and maintenance.',
     },
     {
       id: 2,
-      question: "What is the company's mission?",
-      answer: "To provide high-quality engineering services that meet our customers' needs",
+      question: 'Do you have experience in our specific industry?',
+      answer:
+        'Yes, we have extensive experience in various industries. We’ve worked with clients in sectors such as manufacturing, energy, technology, and more.',
     },
     {
       id: 3,
-      question: 'What services does the company offer?',
+      question: 'What is your approach to project management?',
       answer:
-        'The company offers a wide range of engineering services, including design, construction, and maintenance',
+        'We follow a systematic approach to project management which includes planning, organizing, securing, controlling, leading and managing resources to achieve specific goals.',
     },
     {
       id: 4,
-      question: "Who are the company's clients?",
+      question: 'Can you handle projects of our size?',
       answer:
-        'Our clients include both private and public sector organizations in various industries',
+        'Absolutely. Our team has the capacity and resources to handle projects of various sizes and complexities.',
     },
     {
       id: 5,
-      question: 'Where is the company located?',
+      question: 'What is your pricing structure?',
       answer:
-        'The company is headquartered in City, Country, with offices in several other locations',
+        'Our pricing structure depends on the scope and complexity of the project. We can provide a detailed quote after understanding your specific needs.',
     },
     {
       id: 6,
       question: 'How long has the company been in business?',
-      answer: 'The company has been providing engineering services for over X years',
+      answer: 'The company has been providing engineering services for over 3 years',
     },
     {
       id: 7,
@@ -68,9 +69,9 @@ const FAQs = () => {
     },
     {
       id: 8,
-      question: 'Does the company have any certifications or accreditations?',
+      question: 'How do you communicate progress during a project?',
       answer:
-        'Yes, the company is certified by [Certification Body] and is a member of [Professional Association]',
+        'We believe in maintaining open lines of communication with our clients. Regular updates are provided through meetings, reports, and digital platforms.',
     },
     {
       id: 9,

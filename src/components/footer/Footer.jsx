@@ -56,9 +56,9 @@ const Footer = () => {
                 </a>
               </p>
               <p className="">
-                <a href="mailto:cubeengineeringlimited@gmail.com">
+                <a href="mailto:info@cubeengineeringltd.com">
                   <EmailIcon />
-                  cubeengineeringlimited@gmail.com
+                  info@cubeengineeringltd.com
                 </a>
               </p>
               <div className="footer-social">
@@ -73,7 +73,11 @@ const Footer = () => {
                     }}
                   />
                 </a>
-                <a href="https://www.linkedin.com/company/cube-engineering-and-general-supplies-limited/">
+                <a
+                  href="https://www.linkedin.com/company/cube-engineering-and-general-supplies-limited/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
                   <LinkedInIcon
                     sx={{
                       color: '#fff',
@@ -101,14 +105,14 @@ const Footer = () => {
                 <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
                 Contact Us
               </a>
-              <a className="text-uppercase" href="#projects">
+              {/* <a className="text-uppercase" href="#projects">
                 <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
                 Projects
               </a>
               <a className="text-uppercase" href="#testimonials">
                 <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
                 Testimonial
-              </a>
+              </a> */}
             </div>
           </div>
           <div className="col-md-6 col-lg-3">
@@ -116,7 +120,7 @@ const Footer = () => {
               <h2>Services Areas</h2>
               {services.map((service) => {
                 return (
-                  <a href="{{ route('services.show', $service->id) }}" className="text-uppercase">
+                  <a href="#services" className="text-uppercase">
                     <ArrowRightIcon sx={{ fontSize: '20px', color: '#fff', marginRight: '10px' }} />
                     {service.name}
                   </a>
@@ -126,7 +130,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="container footer-menu">
+      {/* <div className="container footer-menu">
         <div className="f-menu">
           <a className="text-uppercase" href="$">
             Terms of use
@@ -135,13 +139,13 @@ const Footer = () => {
             Privacy policy
           </a>
         </div>
-      </div>
+      </div> */}
       <div className="container copyright">
         <div className="row">
           <div className="col-md-6">
             <p className="text-uppercase">
               <span>&copy;</span>
-              <a href="{{ route('home') }}">{` Cube Engineering ${new Date().getFullYear()}`}</a>
+              <a href="/">{` Cube Engineering ${new Date().getFullYear()}`}</a>
               <span>, All Right Reserved.</span>
             </p>
           </div>

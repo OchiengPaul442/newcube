@@ -1,120 +1,24 @@
-// import React from "react";
+import React from 'react';
 import TaskAltIcon from '@mui/icons-material/TaskAlt';
-import PhoneIcon from '@mui/icons-material/Phone';
-import { Carousel, Form, TimeLine, FAQs } from '../components';
+import {
+  Carousel,
+  Contact,
+  // Portfolio,
+  Services,
+  Partners,
+  TimeLine,
+  // Testimonials,
+  FAQs,
+} from '../components';
 import Page from '../layout/Page';
 import Image1 from '../assets/images/vision.jpg';
 import Image2 from '../assets/images/augst 002.jpg';
 import Image3 from '../assets/images/1663739612016 1.jpg';
 import Image4 from '../assets/images/SEPT 02.jpg';
 import Image5 from '../assets/images/Premium Photo Future building construction engineering project_.jpg';
-import Picture1 from '../assets/images/Picture1.png';
-import Picture2 from '../assets/images/Picture2.png';
-import Picture3 from '../assets/images/Picture3.png';
-import Picture4 from '../assets/images/Picture4.png';
-import Picture5 from '../assets/images/Picture5.png';
-import Picture6 from '../assets/images/Picture6.png';
 
 const Home = () => {
-  const services = [
-    {
-      id: 1,
-      name: 'Electrical Engineering',
-      image: 'electrical.jpg',
-    },
-    {
-      id: 2,
-      name: 'Mechanical Engineering',
-      image: 'mechanical.jpg',
-    },
-    {
-      id: 3,
-      name: 'Civil Engineering',
-      image: 'civil.jpg',
-    },
-  ];
-
-  const portfolios = [
-    {
-      id: 1,
-      name: 'Electrical Engineering',
-      image: 'electrical.jpg',
-      about: 'We offer a wide range of electrical engineering services',
-    },
-    {
-      id: 2,
-      name: 'Mechanical Engineering',
-      image: 'mechanical.jpg',
-      about: 'We offer a wide range of mechanical engineering services',
-    },
-    {
-      id: 3,
-      name: 'Civil Engineering',
-      image: 'civil.jpg',
-      about: 'We offer a wide range of civil engineering services',
-    },
-    {
-      id: 4,
-      name: 'Electrical Engineering',
-      image: 'electrical.jpg',
-      about: 'We offer a wide range of electrical engineering services',
-    },
-    {
-      id: 5,
-      name: 'Mechanical Engineering',
-      image: 'mechanical.jpg',
-      about: 'We offer a wide range of mechanical engineering services',
-    },
-    {
-      id: 6,
-      name: 'Civil Engineering',
-      image: 'civil.jpg',
-      about: 'We offer a wide range of civil engineering services',
-    },
-  ];
-
-  const testimonials = [
-    {
-      id: 1,
-      customername: 'John Doe',
-      occupation: 'Engineer',
-      comments:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
-      image: 'testimonial-1.jpg',
-    },
-    {
-      id: 2,
-      customername: 'John Doe',
-      occupation: 'Engineer',
-      comments:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
-      image: 'testimonial-1.jpg',
-    },
-    {
-      id: 3,
-      customername: 'John Doe',
-      occupation: 'Engineer',
-      comments:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
-      image: 'testimonial-1.jpg',
-    },
-    {
-      id: 4,
-      customername: 'John Doe',
-      occupation: 'Engineer',
-      comments:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
-      image: 'testimonial-1.jpg',
-    },
-    {
-      id: 5,
-      customername: 'John Doe',
-      occupation: 'Engineer',
-      comments:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.',
-      image: 'testimonial-1.jpg',
-    },
-  ];
+  const [open, setOpen] = React.useState('mission');
 
   return (
     <Page>
@@ -158,7 +62,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
       <section id="about">
         <div className="about-container-wrapper">
           <div id="about" className="about wow fadeInUp" data-wow-delay="0.1s">
@@ -203,103 +106,131 @@ const Home = () => {
               <div className="Tabside">
                 <ul>
                   <li>
-                    <a href="$" className="text-dark tabLink activeLink" id="cont-1">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        return setOpen('mission');
+                      }}
+                      className={`text-dark tabLink ${open === 'mission' ? 'activeLink' : ''}`}
+                      id="cont-1"
+                    >
                       Mission
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a href="$" className="text-dark tabLink" id="cont-2">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setOpen('vision');
+                      }}
+                      className={`text-dark tabLink ${open === 'vision' ? 'activeLink' : ''}`}
+                      id="cont-2"
+                    >
                       vision
-                    </a>
+                    </button>
                   </li>
                   <li>
-                    <a href="$" className="text-dark tabLink" id="cont-3">
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setOpen('values');
+                      }}
+                      className={`text-dark tabLink ${open === 'values' ? 'activeLink' : ''}`}
+                      id="cont-3"
+                    >
                       Values
-                    </a>
+                    </button>
                   </li>
                 </ul>
                 <div className="clear" />
-                <div className="tabcontent" id="cont-1-1">
-                  <div className="TabImage">
-                    <div className="img1">
-                      <figure>
-                        <img src={Image1} alt="pic-2" />
-                      </figure>
+                {open === 'mission' && (
+                  <div className="tabcontent" id="cont-1-1">
+                    <div className="TabImage">
+                      <div className="img1">
+                        <figure>
+                          <img src={Image1} alt="pic-2" />
+                        </figure>
+                      </div>
+                      <div className="img2">
+                        <figure>
+                          <img src={Image3} alt="pic-2" />
+                        </figure>
+                      </div>
                     </div>
-                    <div className="img2">
-                      <figure>
-                        <img src={Image3} alt="pic-2" />
-                      </figure>
-                    </div>
-                  </div>
-                  <div className="Description">
-                    <h3>Our Mission</h3>
-                    <p>
-                      To be the leader in offering the highest degree of technical and operational
-                      efficiency for our clients through provision of high quality engineering work.
-                    </p>
-                  </div>
-                </div>
-                <div className="tabcontent hide" id="cont-2-1">
-                  <div className="TabImage">
-                    <div className="img1">
-                      <figure>
-                        <img src={Image1} alt="pic-2" />
-                      </figure>
-                    </div>
-                    <div className="img2">
-                      <figure>
-                        <img src={Image2} alt="pic-2" />
-                      </figure>
+                    <div className="Description">
+                      <h3>Our Mission</h3>
+                      <p>
+                        To be the leader in offering the highest degree of technical and operational
+                        efficiency for our clients through provision of high quality engineering
+                        work.
+                      </p>
                     </div>
                   </div>
-                  <div className="Description">
-                    <h3>Our Vision</h3>
-                    <p>
-                      To be the leading Services Provider in the engineering sector with high focus
-                      on Customer Satisfaction
-                    </p>
-                  </div>
-                </div>
-                <div className="tabcontent hide" id="cont-3-1">
-                  <div className="TabImage">
-                    <div className="img1">
-                      <figure>
-                        <img src={Image1} alt="pic-2" />
-                      </figure>
+                )}
+                {open === 'vision' && (
+                  <div className="tabcontent" id="cont-2-1">
+                    <div className="TabImage">
+                      <div className="img1">
+                        <figure>
+                          <img src={Image1} alt="pic-2" />
+                        </figure>
+                      </div>
+                      <div className="img2">
+                        <figure>
+                          <img src={Image2} alt="pic-2" />
+                        </figure>
+                      </div>
                     </div>
-                    <div className="img2">
-                      <figure>
-                        <img src={Image4} alt="pic-2" />
-                      </figure>
+                    <div className="Description">
+                      <h3>Our Vision</h3>
+                      <p>
+                        To be the leading Services Provider in the engineering sector with high
+                        focus on Customer Satisfaction
+                      </p>
                     </div>
                   </div>
-                  <div className="Description">
-                    <h3>Our Core Values</h3>
-                    <p>
-                      <span>Integrity:</span>
-                      <span>Honesty and strong moral principles.</span>
-                    </p>
-                    <p>
-                      <span>Customer Satisfaction:</span>
-                      <span>Exceed customer expectations.</span>
-                    </p>
-                    <p>
-                      <span>Professionalism:</span>
-                      <span>
-                        Skill, good judgement and individual adherence to the set standards.
-                      </span>
-                    </p>
-                    <p>
-                      <span>Innovation:</span>
-                      <span>Take pro-active steps to drive performance.</span>
-                    </p>
-                    <p>
-                      <span>Teamwork:</span>
-                      <span>Collaborate with others to achieve company goals.</span>
-                    </p>
+                )}
+                {open === 'values' && (
+                  <div className="tabcontent" id="cont-3-1">
+                    <div className="TabImage">
+                      <div className="img1">
+                        <figure>
+                          <img src={Image1} alt="pic-2" />
+                        </figure>
+                      </div>
+                      <div className="img2">
+                        <figure>
+                          <img src={Image4} alt="pic-2" />
+                        </figure>
+                      </div>
+                    </div>
+                    <div className="Description">
+                      <h3>Our Core Values</h3>
+                      <p>
+                        <h4>Integrity:</h4>
+                        <span>Honesty and strong moral principles.</span>
+                      </p>
+                      <p>
+                        <h4>Customer Satisfaction:</h4>
+                        <span>Exceed customer expectations.</span>
+                      </p>
+                      <p>
+                        <h4>Professionalism:</h4>
+                        <span>
+                          Skill, good judgement and individual adherence to the set standards.
+                        </span>
+                      </p>
+                      <p>
+                        <h4>Innovation:</h4>
+                        <span>Take pro-active steps to drive performance.</span>
+                      </p>
+                      <p>
+                        <h4>Teamwork:</h4>
+                        <span>Collaborate with others to achieve company goals.</span>
+                      </p>
+                    </div>
                   </div>
-                </div>
+                )}
                 <div className="clear" />
               </div>
             </div>
@@ -361,185 +292,12 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section id="services">
-        <div className="service wow fadeInUp">
-          <div className="section-header text-center">
-            <p>Our Services</p>
-            <h2>Services We Provide</h2>
-          </div>
-          <div className="row d-flex gap-4 justify-content-around flex-wrap">
-            {services.map((service) => {
-              return (
-                <div className="service-card" key={service.id}>
-                  <img src={service.image} alt={service.name} />
-                  <div className="service-card-content">
-                    <h2 className="service-card-title text-capitalize">{service.name}</h2>
-                    <a href="$" className="serivce-button">
-                      Learn More
-                    </a>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-      <section id="portfolio" className="wow fadeIn">
-        <div className="sectionHeader textCenter">
-          <p>Projects</p>
-          <h2>Our Projects</h2>
-        </div>
-        <div className="containerFluid bgPortfolio py5">
-          <div className="container py5">
-            <div className="row m0 portfolioContainer">
-              {portfolios.map(({ image, name, about }) => {
-                return (
-                  <div className="colLg4 colMd6 colSm12 p0 portfolioItem">
-                    <div className="positionRelative overflowHidden">
-                      <div className="portfolioImg">
-                        <img className="imgFluid w100" src={image} alt={name} />
-                      </div>
-                      <div className="portfolioText">
-                        <h4 className="fontWeightBold mb4">{name}</h4>
-                        <div className="dFlex flexColumn alignItemsCenter justifyContentCenter">
-                          <p className="textCenter">{about}</p>
-                          <a
-                            className="btn btnSm btnSecondary m1"
-                            href="$"
-                            data-lightbox="portfolio"
-                          >
-                            <i className="fa faEye" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </div>
-      </section>
+      <Services />
+      {/* <Portfolio /> */}
       <FAQs />
-      <section id="testimonials">
-        <div className="testimonial wow fadeIn" data-wow-delay="0.1s">
-          <div className="section-header text-center">
-            <p>Testimonials</p>
-            <h2
-              style={{
-                color: '#fff',
-              }}
-            >
-              From Our Customers
-            </h2>
-          </div>
-          <div className="container">
-            <div className="row">
-              <div className="col-12">
-                <div className="testimonial-slider-nav">
-                  {testimonials.map((testimonial) => {
-                    return (
-                      <div className="slider-nav">
-                        <img src={testimonial.image} alt="Testimonial" />
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-12">
-                <div className="testimonial-slider">
-                  {testimonials.map((testimonial) => {
-                    return (
-                      <div className="slider-item">
-                        <h3>{testimonial.customername}</h3>
-                        <h4>{testimonial.occupation}</h4>
-                        <p>{testimonial.comments}</p>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div className="contact wow fadeInUp">
-          <div className="container">
-            <div className="section-header text-center">
-              <p>Get In Touch</p>
-              <h2>For Any Query</h2>
-            </div>
-            <div className="row">
-              <div className="col-md-6">
-                <div className="contact-info">
-                  <div className="contact-item">
-                    <i className="flaticon-address" />
-                    <div className="contact-text">
-                      <h2>Location</h2>
-                      <p>Blue Heights, Level 3 Nkrumah Rd</p>
-                    </div>
-                  </div>
-                  <div className="contact-item">
-                    <i className="flaticon-call" />
-                    <div className="contact-text">
-                      <h2>Phone</h2>
-                      <p>+256 776024658</p>
-                      <p>+256774764199</p>
-                      <p>+256708881648</p>
-                    </div>
-                  </div>
-                  <div className="contact-item">
-                    <i className="flaticon-send-mail" />
-                    <div className="contact-text">
-                      <h2>Email</h2>
-                      <p className="d-flex flex-wrap">cubeengineeringlimited@gmail.com</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="contact-form">
-                  <div id="success" />
-                  <Form />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section id="partners">
-        <div className="container wow fadeIn">
-          <div className="section-header text-center">
-            <p>Partners</p>
-            <h2>Our key partners</h2>
-          </div>
-          <div className="text-center">
-            <div className="row align-items-center">
-              <div className="col">
-                <img width="280px" src={Picture1} alt="partner-logos" />
-              </div>
-              <div className="col">
-                <img width="280px" src={Picture3} alt="partner-logos" />
-              </div>
-              <div className="col">
-                <img width="280px" src={Picture4} alt="partner-logos" />
-              </div>
-              <div className="col">
-                <img width="280px" src={Picture5} alt="partner-logos" />
-              </div>
-              <div className="col">
-                <img width="280px" src={Picture2} alt="partner-logos" />
-              </div>
-              <div className="col">
-                <img width="280px" src={Picture6} alt="partner-logos" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* <Testimonials /> */}
+      <Contact />
+      <Partners />
       <TimeLine />
       <section>
         <iframe
@@ -553,13 +311,6 @@ const Home = () => {
           referrerPolicy="no-referrer-when-downgrade"
           className="mt5"
         />
-      </section>
-      <section>
-        <span className="floating-call-btn">
-          <a href="tel:+256776024658">
-            <PhoneIcon sx={{ fontSize: '30px', color: '#fff' }} />
-          </a>
-        </span>
       </section>
       <a href="$" className="back-to-top">
         <i className="fa fa-chevron-up" />

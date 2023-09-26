@@ -979,7 +979,7 @@ section {
   margin: 0px -2px;
   display: inline-block;
 }
-.About_sec .Tabside li a {
+.tabLink {
   padding: 14px 40px 13px 40px;
   font-size: 18px;
   color: #989898;
@@ -991,11 +991,10 @@ section {
   display: block;
   transition: all 0.3s ease;
 }
-.About_sec .Tabside li a:hover,
-.About_sec .Tabside li a.activeLink {
+
+.activeLink {
+  background-color: #ff9408;
   border: solid 1px #ff9408;
-  background: #ff9408;
-  color: #fff;
 }
 .About_sec .Tabside .TabImage {
   width: 43.63%;
@@ -1843,61 +1842,6 @@ section {
   .timeline-carousel {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-
-/*******************************/
-/********* floating call btn CSS **********/
-/*******************************/
-.floating-call-btn {
-  position: fixed;
-  bottom: 68px;
-  right: 13px;
-  z-index: 999;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: var(--text-color-lg);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  animation: floating 1s ease-in-out infinite;
-}
-
-@keyframes floating {
-  0% {
-    transform: translateY(0);
-    box-shadow: 0 4px 4px orange;
-  }
-  50% {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 4px orange;
-  }
-  100% {
-    transform: translateY(0);
-    box-shadow: 0 4px 4px orange;
-  }
-}
-
-.floating-call-btn:hover {
-  background-color: var(--theme-color-2);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.floating-call-btn a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-.floating-call-btn .fa {
-  color: var(--text-color-sm);
-  font-size: 20px;
-  line-height: 50px;
-  text-align: center;
 }
 
 /*******************************/
