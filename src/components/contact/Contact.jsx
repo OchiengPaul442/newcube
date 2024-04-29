@@ -17,7 +17,7 @@ const Contact = () => {
                   <i className="flaticon-address" />
                   <div className="contact-text">
                     <h2>Location</h2>
-                    <p>Blue Heights, Level 3 Nkrumah Rd</p>
+                    <p>Plot 46, House No. M2 Kasumba Circular Way Near UNEB, Ntinda.</p>
                   </div>
                 </div>
                 <div className="contact-item">

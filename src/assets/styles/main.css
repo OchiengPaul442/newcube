@@ -1754,6 +1754,11 @@ section {
   padding: 150px 0;
 }
 
+#partners img {
+  /* use multi blend */
+  mix-blend-mode: multiply;
+}
+
 /*******************************/
 /********* timeline CSS **********/
 /*******************************/

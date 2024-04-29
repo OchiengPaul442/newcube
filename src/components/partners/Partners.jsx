@@ -6,6 +6,8 @@ import Picture4 from '../../assets/images/Picture4.png';
 import Picture5 from '../../assets/images/Picture5.png';
 import Picture6 from '../../assets/images/Picture6.png';
 import Picture7 from '../../assets/images/sinopec.png';
+import Picture8 from '../../assets/images/essar.jpeg';
+import Picture9 from '../../assets/images/UBL.jpeg';
 
 const Partners = () => {
   return (
@@ -37,6 +39,12 @@ const Partners = () => {
             </div>
             <div className="col">
               <img width="280px" src={Picture7} alt="partner-logos" />
+            </div>
+            <div className="col">
+              <img width="280px" src={Picture8} alt="partner-logos" />
+            </div>
+            <div className="col">
+              <img width="150px" className="mt-2" src={Picture9} alt="partner-logos" />
             </div>
           </div>
         </div>
