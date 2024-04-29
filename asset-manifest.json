@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6758cd50.css",
-    "main.js": "/static/js/main.90f5115b.js",
+    "main.css": "/static/css/main.bc34aeac.css",
+    "main.js": "/static/js/main.1ae8b9b3.js",
     "static/media/sept.jpg": "/static/media/sept.a745b115ad1fe8ea7160.jpg",
     "static/media/augst 003.jpg": "/static/media/augst 003.37bce8fb59e25d65f383.jpg",
     "static/media/sept03.jpg": "/static/media/sept03.33a68026d451a3afebe7.jpg",
@@ -29,6 +29,7 @@
     "static/media/Picture6.png": "/static/media/Picture6.7b7adaa9aa18f258618b.png",
     "static/media/Picture1.png": "/static/media/Picture1.d583dd4c5245c73c585a.png",
     "static/media/Picture2.png": "/static/media/Picture2.30f0bc5d92896418d7fc.png",
+    "static/media/essar.jpeg": "/static/media/essar.2eefe88038933586a440.jpeg",
     "static/media/Picture4.png": "/static/media/Picture4.71aa6578cc7a947948cd.png",
     "static/media/Flaticon.eot": "/static/media/Flaticon.d76b6e8e42591ea6602e.eot",
     "static/media/Flaticon.ttf": "/static/media/Flaticon.fd4326ae8d92a4a04d29.ttf",
@@ -39,11 +40,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.6758cd50.css.map": "/static/css/main.6758cd50.css.map",
-    "main.90f5115b.js.map": "/static/js/main.90f5115b.js.map"
+    "main.bc34aeac.css.map": "/static/css/main.bc34aeac.css.map",
+    "main.1ae8b9b3.js.map": "/static/js/main.1ae8b9b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.6758cd50.css",
-    "static/js/main.90f5115b.js"
+    "static/css/main.bc34aeac.css",
+    "static/js/main.1ae8b9b3.js"
   ]
 }
