@@ -39,7 +39,7 @@ const Nav = () => {
                     Services
                   </a>
                   <a href="#portfolio" className="nav-item nav-link">
-                    Projects
+                    Portfolio
                   </a>
                   <a href="#FAQs" className="nav-item nav-link">
                     FAQs

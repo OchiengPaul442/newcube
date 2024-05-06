@@ -35,7 +35,7 @@ const Footer = () => {
               <h2>Office Contact</h2>
               <p className="text-uppercase" style={{ fontSize: '15px' }}>
                 <LocationOnIcon sx={{ fontSize: '20px' }} />
-                Blue Heights, Level 3 Nkrumah Rd
+                Plot 46, House No. M2 Kasumba Circular Way Near UNEB, Ntinda.
               </p>
               <p className="text-uppercase">
                 <a href="tel:+256 776024658">

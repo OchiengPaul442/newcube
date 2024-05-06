@@ -3,7 +3,7 @@ import TaskAltIcon from '@mui/icons-material/TaskAlt';
 import {
   Carousel,
   Contact,
-  // Portfolio,
+  Portfolio,
   Services,
   Partners,
   TimeLine,
@@ -293,7 +293,7 @@ const Home = () => {
         </div>
       </section>
       <Services />
-      {/* <Portfolio /> */}
+      <Portfolio />
       <FAQs />
       {/* <Testimonials /> */}
       <Contact />
